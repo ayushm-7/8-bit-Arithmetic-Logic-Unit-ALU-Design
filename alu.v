@@ -32,7 +32,7 @@ module alu_8bit (
             3'b110: begin       // Inc A
                 {carry, result} = A + 1;
             end
-            3'b111: begin       //  Right Shift A
+            3'b111: begin       //  Left Shift A
                 result = A << 1;
             end
             default: result = 8'b00000000;
